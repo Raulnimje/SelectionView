@@ -6,23 +6,27 @@
 - Core/SelectionItem.swift
 - Core/SelectionItemModel.swift
 - Core/SelectionViewConfiguration.swift
+- Core/Layout+Util.swift
 
 ## Usage
 
 ```swift
+import UIKit
+
 class ViewController: UIViewController {
+
+    @IBOutlet private var selectionViewSingle: SelectionView!
+    @IBOutlet private var selectionViewMultiple: SelectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addSelectionView()
+
+        setupSelection()
     }
+}
 
-    func addSelectionView() {
-        let selectionView = SelectionView(forAutoLayout: ())
-        view.addSubview(selectionView)
-
-        // TODO: Set the `SelectionView` constraints
-
+private extension ViewController {
+    func setupSelection() {
         // configure the options
         let options = [
             SelectionItemModel(title: "Reports", image: Images.board),
@@ -38,6 +42,11 @@ class ViewController: UIViewController {
             unselectedColor: .white,
             multipleSelection: true
         )
+        
+        // event when items in the list changed
+        selectionViewSingle.itemsDidChange = { models in
+            models.forEach { print($0) }
+        }
     }
 }
 ```
