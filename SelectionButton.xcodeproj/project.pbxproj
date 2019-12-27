@@ -112,11 +112,11 @@
 		9F055C7723B54AF500AA9841 /* SelectionButton */ = {
 			isa = PBXGroup;
 			children = (
+				9F214BDB23B5F8A20044BEAD /* Core */,
 				9F055C7A23B54AF500AA9841 /* ViewController.swift */,
 				9F214BE423B5F9010044BEAD /* MainViewModel.swift */,
-				9F214BE623B5F9170044BEAD /* Images.swift */,
-				9F214BDB23B5F8A20044BEAD /* Core */,
 				9F055C7823B54AF500AA9841 /* AppDelegate.swift */,
+				9F214BE623B5F9170044BEAD /* Images.swift */,
 				9F055C7C23B54AF500AA9841 /* Main.storyboard */,
 				9F055C7F23B54AF600AA9841 /* Assets.xcassets */,
 				9F055C8123B54AF600AA9841 /* LaunchScreen.storyboard */,
