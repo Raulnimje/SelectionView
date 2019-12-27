@@ -5,7 +5,7 @@ class ViewController: UIViewController {
 
     @IBOutlet private var toggle: UISwitch!
     
-    private var selectionView: SelectionView! = SelectionView(forAutoLayout: ())
+    private let selectionView = SelectionView(forAutoLayout: ())
     private let viewModel = MainViewModel()
     
     override func viewDidLoad() {
