@@ -81,7 +81,7 @@ extension SelectionViewModel {
         
         // create the views and add the tap event
         let result = models.map { model -> SelectionItem in
-            let button = SelectionItem(forAutoLayout: ())
+            let button = SelectionItem()
             button.viewModel = model
             
             button.onTouch = { [weak self] in

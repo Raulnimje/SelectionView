@@ -8,10 +8,10 @@ class SelectionItem: UIView {
     
     var onTouch: TapEventHandler?
     
-    private let container = UIStackView(forAutoLayout: ())
-    private let titleLabel = UILabel(forAutoLayout: ())
-    private let iconImageView = UIImageView(forAutoLayout: ())
-    private let topButton = UIButton(forAutoLayout: ())
+    private let container = UIStackView()
+    private let titleLabel = UILabel()
+    private let iconImageView = UIImageView()
+    private let topButton = UIButton()
     private var animationDuration: TimeInterval = 0.0
     
     var viewModel: SelectionItemModel? {
@@ -52,7 +52,7 @@ private extension SelectionItem {
         
         container.axis = .vertical
         container.alignment = .center
-        container.spacing = 4
+        container.spacing = 3
         
         // Icon image view
         container.addArrangedSubview(iconImageView)

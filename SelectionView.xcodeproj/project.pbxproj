@@ -20,6 +20,7 @@
 		9F214BE523B5F9010044BEAD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE423B5F9010044BEAD /* MainViewModel.swift */; };
 		9F214BE723B5F9170044BEAD /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE623B5F9170044BEAD /* Images.swift */; };
 		9F214BE923B67A730044BEAD /* SelectionViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */; };
+		9FE4574D23B69CC000761B9D /* LayoutUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4574C23B69CC000761B9D /* LayoutUtil.swift */; };
 		CFD2819BCE9264FBC2698864 /* Pods_SelectionButtonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2AE61E55B3AC049BD6DC7F /* Pods_SelectionButtonTests.framework */; };
 		E2A4307556E1B479B50B9435 /* Pods_SelectionButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C69238E51EE2CD9FE141FF3 /* Pods_SelectionButton.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		9F214BE423B5F9010044BEAD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9F214BE623B5F9170044BEAD /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewConfiguration.swift; sourceTree = "<group>"; };
+		9FE4574C23B69CC000761B9D /* LayoutUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutUtil.swift; sourceTree = "<group>"; };
 		C7371AB233290BB9F85E6E53 /* Pods-SelectionButtonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButtonTests.debug.xcconfig"; path = "Target Support Files/Pods-SelectionButtonTests/Pods-SelectionButtonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB2AE61E55B3AC049BD6DC7F /* Pods_SelectionButtonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelectionButtonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				9F214BDC23B5F8B00044BEAD /* SelectionItem.swift */,
 				9F214BDE23B5F8C10044BEAD /* SelectionItemModel.swift */,
 				9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */,
+				9FE4574C23B69CC000761B9D /* LayoutUtil.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				9F214BE523B5F9010044BEAD /* MainViewModel.swift in Sources */,
 				9F214BDF23B5F8C10044BEAD /* SelectionItemModel.swift in Sources */,
 				9F055C7B23B54AF500AA9841 /* ViewController.swift in Sources */,
+				9FE4574D23B69CC000761B9D /* LayoutUtil.swift in Sources */,
 				9F214BE923B67A730044BEAD /* SelectionViewConfiguration.swift in Sources */,
 				9F055C7923B54AF500AA9841 /* AppDelegate.swift in Sources */,
 				9F214BDD23B5F8B00044BEAD /* SelectionItem.swift in Sources */,

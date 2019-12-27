@@ -7,7 +7,7 @@ class SelectionView: UIView {
     // MARK: - Properties
     
     private let viewModel = SelectionViewModel()
-    private let stackContainer = UIStackView(forAutoLayout: ())
+    private let stackContainer = UIStackView()
     
     var itemsWillChange: ItemsChangedHandler? {
         didSet {
