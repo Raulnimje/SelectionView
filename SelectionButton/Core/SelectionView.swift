@@ -34,11 +34,13 @@ class SelectionView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setupView()
     }
 }
 
 private extension SelectionView {
     func setupView() {
+        backgroundColor = .clear
         addSubview(stackContainer)
         
         let margin = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)

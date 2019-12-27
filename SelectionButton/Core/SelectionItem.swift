@@ -32,6 +32,7 @@ class SelectionItem: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setupView()
     }
     
     override func layoutSubviews() {

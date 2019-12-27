@@ -10,7 +10,7 @@ class MainViewModel {
             SelectionItemModel(title: "Gestures", image: Images.icon3),
             SelectionItemModel(title: "Sports", image: Images.icon4),
             SelectionItemModel(title: "Weather", image: Images.icon5)
-        ]
+        ].shuffled()
     }
     
     // configuration for SelectionView
