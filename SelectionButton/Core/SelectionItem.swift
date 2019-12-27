@@ -46,19 +46,19 @@ private extension SelectionItem {
     func setupView() {
         addSubview(container)
         
-        container.autoAlignAxis(toSuperviewAxis: .horizontal)
-        container.autoPinEdge(toSuperviewEdge: .leading, withInset: 5)
-        container.autoPinEdge(toSuperviewEdge: .trailing, withInset: 5)
+        let margin = UIEdgeInsets(top: 5, left: 2, bottom: 5, right: 2)
+        container.autoPinEdgesToSuperviewEdges(with: margin)
         
         container.axis = .vertical
         container.alignment = .center
-        container.spacing = 8
+        container.spacing = 4
         
         // Icon image view
         container.addArrangedSubview(iconImageView)
+        iconImageView.autoMatch(.height, to: .height, of: container, withMultiplier: 0.7)
+        iconImageView.autoMatch(.width, to: .height, of: container, withMultiplier: 0.7)
         
-        iconImageView.autoMatch(.width, to: .width, of: container, withMultiplier: 0.5)
-        iconImageView.autoMatch(.height, to: .width, of: container, withMultiplier: 0.5)
+        iconImageView.contentMode = .scaleAspectFit
         
         // title label
         container.addArrangedSubview(titleLabel)

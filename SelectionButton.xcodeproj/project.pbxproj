@@ -137,8 +137,8 @@
 		9F214BDB23B5F8A20044BEAD /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				9F214BE023B5F8D80044BEAD /* SelectionView.swift */,
 				9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */,
+				9F214BE023B5F8D80044BEAD /* SelectionView.swift */,
 				9F214BE223B5F8E90044BEAD /* SelectionViewModel.swift */,
 				9F214BDC23B5F8B00044BEAD /* SelectionItem.swift */,
 				9F214BDE23B5F8C10044BEAD /* SelectionItemModel.swift */,
