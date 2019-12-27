@@ -1,5 +1,11 @@
 # SelectionView
 
+## Screenshots
+
+| Single | Multiple |
+| ------ | ------ |
+| ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_1.png) | ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_2.png) |
+
 ## What's in the box
 - Core/SelectionView.swift
 - Core/SelectionViewModel.swift
