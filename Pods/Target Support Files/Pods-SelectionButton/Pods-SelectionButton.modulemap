@@ -1,6 +1,0 @@
-framework module Pods_SelectionButton {
-  umbrella header "Pods-SelectionButton-umbrella.h"
-
-  export *
-  module * { export * }
-}

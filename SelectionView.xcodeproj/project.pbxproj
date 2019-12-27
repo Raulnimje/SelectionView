@@ -21,8 +21,6 @@
 		9F214BE723B5F9170044BEAD /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE623B5F9170044BEAD /* Images.swift */; };
 		9F214BE923B67A730044BEAD /* SelectionViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */; };
 		9FE4574D23B69CC000761B9D /* LayoutUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4574C23B69CC000761B9D /* LayoutUtil.swift */; };
-		CFD2819BCE9264FBC2698864 /* Pods_SelectionButtonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2AE61E55B3AC049BD6DC7F /* Pods_SelectionButtonTests.framework */; };
-		E2A4307556E1B479B50B9435 /* Pods_SelectionButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C69238E51EE2CD9FE141FF3 /* Pods_SelectionButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C69238E51EE2CD9FE141FF3 /* Pods_SelectionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelectionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B36E6B4BA743F290D006252 /* Pods-SelectionButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButton.release.xcconfig"; path = "Target Support Files/Pods-SelectionButton/Pods-SelectionButton.release.xcconfig"; sourceTree = "<group>"; };
-		7085B2720575431F35FD3BE0 /* Pods-SelectionButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButton.debug.xcconfig"; path = "Target Support Files/Pods-SelectionButton/Pods-SelectionButton.debug.xcconfig"; sourceTree = "<group>"; };
-		7502FF422298CE3FE94475F3 /* Pods-SelectionButtonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButtonTests.release.xcconfig"; path = "Target Support Files/Pods-SelectionButtonTests/Pods-SelectionButtonTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F055C7523B54AF500AA9841 /* SelectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F055C7823B54AF500AA9841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F055C7A23B54AF500AA9841 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,8 +52,6 @@
 		9F214BE623B5F9170044BEAD /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewConfiguration.swift; sourceTree = "<group>"; };
 		9FE4574C23B69CC000761B9D /* LayoutUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutUtil.swift; sourceTree = "<group>"; };
-		C7371AB233290BB9F85E6E53 /* Pods-SelectionButtonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButtonTests.debug.xcconfig"; path = "Target Support Files/Pods-SelectionButtonTests/Pods-SelectionButtonTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FB2AE61E55B3AC049BD6DC7F /* Pods_SelectionButtonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelectionButtonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A4307556E1B479B50B9435 /* Pods_SelectionButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,22 +66,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFD2819BCE9264FBC2698864 /* Pods_SelectionButtonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B6026C71A8AB11D484B9386 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0C69238E51EE2CD9FE141FF3 /* Pods_SelectionButton.framework */,
-				FB2AE61E55B3AC049BD6DC7F /* Pods_SelectionButtonTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		9F055C6C23B54AF500AA9841 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +79,6 @@
 				9F055C8C23B54AF600AA9841 /* SelectionButtonTests */,
 				9F055C7623B54AF500AA9841 /* Products */,
 				A82C114418DF5040E56837BD /* Pods */,
-				2B6026C71A8AB11D484B9386 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,10 +132,6 @@
 		A82C114418DF5040E56837BD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7085B2720575431F35FD3BE0 /* Pods-SelectionButton.debug.xcconfig */,
-				2B36E6B4BA743F290D006252 /* Pods-SelectionButton.release.xcconfig */,
-				C7371AB233290BB9F85E6E53 /* Pods-SelectionButtonTests.debug.xcconfig */,
-				7502FF422298CE3FE94475F3 /* Pods-SelectionButtonTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -167,11 +143,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F055C9223B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionView" */;
 			buildPhases = (
-				586D7DDABABBBAB596FF60CF /* [CP] Check Pods Manifest.lock */,
 				9F055C7123B54AF500AA9841 /* Sources */,
 				9F055C7223B54AF500AA9841 /* Frameworks */,
 				9F055C7323B54AF500AA9841 /* Resources */,
-				5687D61BA1B5F76CB4B3172C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,7 +160,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F055C9523B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionViewTests" */;
 			buildPhases = (
-				DEAC49D75D21EE75363CBF0C /* [CP] Check Pods Manifest.lock */,
 				9F055C8523B54AF600AA9841 /* Sources */,
 				9F055C8623B54AF600AA9841 /* Frameworks */,
 				9F055C8723B54AF600AA9841 /* Resources */,
@@ -258,70 +231,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5687D61BA1B5F76CB4B3172C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SelectionButton/Pods-SelectionButton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SelectionButton/Pods-SelectionButton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SelectionButton/Pods-SelectionButton-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		586D7DDABABBBAB596FF60CF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SelectionButton-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DEAC49D75D21EE75363CBF0C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SelectionButtonTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F055C7123B54AF500AA9841 /* Sources */ = {
@@ -497,7 +406,6 @@
 		};
 		9F055C9323B54AF600AA9841 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7085B2720575431F35FD3BE0 /* Pods-SelectionButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -515,7 +423,6 @@
 		};
 		9F055C9423B54AF600AA9841 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B36E6B4BA743F290D006252 /* Pods-SelectionButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -533,7 +440,6 @@
 		};
 		9F055C9623B54AF600AA9841 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7371AB233290BB9F85E6E53 /* Pods-SelectionButtonTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,7 +460,6 @@
 		};
 		9F055C9723B54AF600AA9841 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7502FF422298CE3FE94475F3 /* Pods-SelectionButtonTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
