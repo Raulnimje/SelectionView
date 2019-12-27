@@ -4,7 +4,7 @@
 
 | Single | Multiple | Both |
 | ------ | ------ | ------ |
-| ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_1.png) | ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_2.png) | <img src="https://github.com/cristhianleonli/AlbumJet/blob/master/screenshots/quick_video.gif" width="250"> |
+| ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_1.png) | ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_2.png) | <img src="https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/quick_video.gif" width="250"> |
 
 ## What's in the box
 - Core/SelectionView.swift
