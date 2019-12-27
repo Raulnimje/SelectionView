@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,7 +20,7 @@
 		9F214BE523B5F9010044BEAD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE423B5F9010044BEAD /* MainViewModel.swift */; };
 		9F214BE723B5F9170044BEAD /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE623B5F9170044BEAD /* Images.swift */; };
 		9F214BE923B67A730044BEAD /* SelectionViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */; };
-		9FE4574D23B69CC000761B9D /* LayoutUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4574C23B69CC000761B9D /* LayoutUtil.swift */; };
+		9FE4574D23B69CC000761B9D /* Layout+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4574C23B69CC000761B9D /* Layout+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		9F214BE423B5F9010044BEAD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9F214BE623B5F9170044BEAD /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewConfiguration.swift; sourceTree = "<group>"; };
-		9FE4574C23B69CC000761B9D /* LayoutUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutUtil.swift; sourceTree = "<group>"; };
+		9FE4574C23B69CC000761B9D /* Layout+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+Util.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 				9F214BDC23B5F8B00044BEAD /* SelectionItem.swift */,
 				9F214BDE23B5F8C10044BEAD /* SelectionItemModel.swift */,
 				9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */,
-				9FE4574C23B69CC000761B9D /* LayoutUtil.swift */,
+				9FE4574C23B69CC000761B9D /* Layout+Util.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 				9F214BE523B5F9010044BEAD /* MainViewModel.swift in Sources */,
 				9F214BDF23B5F8C10044BEAD /* SelectionItemModel.swift in Sources */,
 				9F055C7B23B54AF500AA9841 /* ViewController.swift in Sources */,
-				9FE4574D23B69CC000761B9D /* LayoutUtil.swift in Sources */,
+				9FE4574D23B69CC000761B9D /* Layout+Util.swift in Sources */,
 				9F214BE923B67A730044BEAD /* SelectionViewConfiguration.swift in Sources */,
 				9F055C7923B54AF500AA9841 /* AppDelegate.swift in Sources */,
 				9F214BDD23B5F8B00044BEAD /* SelectionItem.swift in Sources */,

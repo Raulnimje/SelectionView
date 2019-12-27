@@ -1,5 +1,4 @@
 import UIKit
-import Foundation
 
 extension UIView {
     enum AnchorDimension {
@@ -32,4 +31,3 @@ extension UIView {
         firstAnchor.constraint(equalTo: secondAnchor, multiplier: multiplier).isActive = true
     }
 }
-
