@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F055C7923B54AF500AA9841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F055C7823B54AF500AA9841 /* AppDelegate.swift */; };
+		9F055C7B23B54AF500AA9841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F055C7A23B54AF500AA9841 /* ViewController.swift */; };
+		9F055C7E23B54AF500AA9841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F055C7C23B54AF500AA9841 /* Main.storyboard */; };
+		9F055C8023B54AF600AA9841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F055C7F23B54AF600AA9841 /* Assets.xcassets */; };
+		9F055C8323B54AF600AA9841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F055C8123B54AF600AA9841 /* LaunchScreen.storyboard */; };
+		9F055C8E23B54AF600AA9841 /* SelectionButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F055C8D23B54AF600AA9841 /* SelectionButtonTests.swift */; };
+		9F214BDD23B5F8B00044BEAD /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BDC23B5F8B00044BEAD /* ButtonView.swift */; };
+		9F214BDF23B5F8C10044BEAD /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BDE23B5F8C10044BEAD /* ButtonViewModel.swift */; };
+		9F214BE123B5F8D80044BEAD /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE023B5F8D80044BEAD /* SelectionView.swift */; };
+		9F214BE323B5F8E90044BEAD /* SelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE223B5F8E90044BEAD /* SelectionViewModel.swift */; };
+		9F214BE523B5F9010044BEAD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE423B5F9010044BEAD /* MainViewModel.swift */; };
+		9F214BE723B5F9170044BEAD /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE623B5F9170044BEAD /* Images.swift */; };
+		CFD2819BCE9264FBC2698864 /* Pods_SelectionButtonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2AE61E55B3AC049BD6DC7F /* Pods_SelectionButtonTests.framework */; };
+		E2A4307556E1B479B50B9435 /* Pods_SelectionButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C69238E51EE2CD9FE141FF3 /* Pods_SelectionButton.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F055C8A23B54AF600AA9841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F055C6D23B54AF500AA9841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F055C7423B54AF500AA9841;
+			remoteInfo = SelectionButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C69238E51EE2CD9FE141FF3 /* Pods_SelectionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelectionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B36E6B4BA743F290D006252 /* Pods-SelectionButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButton.release.xcconfig"; path = "Target Support Files/Pods-SelectionButton/Pods-SelectionButton.release.xcconfig"; sourceTree = "<group>"; };
+		7085B2720575431F35FD3BE0 /* Pods-SelectionButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButton.debug.xcconfig"; path = "Target Support Files/Pods-SelectionButton/Pods-SelectionButton.debug.xcconfig"; sourceTree = "<group>"; };
+		7502FF422298CE3FE94475F3 /* Pods-SelectionButtonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButtonTests.release.xcconfig"; path = "Target Support Files/Pods-SelectionButtonTests/Pods-SelectionButtonTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F055C7523B54AF500AA9841 /* SelectionButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectionButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F055C7823B54AF500AA9841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F055C7A23B54AF500AA9841 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F055C7D23B54AF500AA9841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F055C7F23B54AF600AA9841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F055C8223B54AF600AA9841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F055C8423B54AF600AA9841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F055C8923B54AF600AA9841 /* SelectionButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectionButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F055C8D23B54AF600AA9841 /* SelectionButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionButtonTests.swift; sourceTree = "<group>"; };
+		9F055C8F23B54AF600AA9841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F214BDC23B5F8B00044BEAD /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		9F214BDE23B5F8C10044BEAD /* ButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewModel.swift; sourceTree = "<group>"; };
+		9F214BE023B5F8D80044BEAD /* SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		9F214BE223B5F8E90044BEAD /* SelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewModel.swift; sourceTree = "<group>"; };
+		9F214BE423B5F9010044BEAD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9F214BE623B5F9170044BEAD /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		C7371AB233290BB9F85E6E53 /* Pods-SelectionButtonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButtonTests.debug.xcconfig"; path = "Target Support Files/Pods-SelectionButtonTests/Pods-SelectionButtonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB2AE61E55B3AC049BD6DC7F /* Pods_SelectionButtonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelectionButtonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F055C7223B54AF500AA9841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A4307556E1B479B50B9435 /* Pods_SelectionButton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F055C8623B54AF600AA9841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD2819BCE9264FBC2698864 /* Pods_SelectionButtonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B6026C71A8AB11D484B9386 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C69238E51EE2CD9FE141FF3 /* Pods_SelectionButton.framework */,
+				FB2AE61E55B3AC049BD6DC7F /* Pods_SelectionButtonTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F055C6C23B54AF500AA9841 = {
+			isa = PBXGroup;
+			children = (
+				9F055C7723B54AF500AA9841 /* SelectionButton */,
+				9F055C8C23B54AF600AA9841 /* SelectionButtonTests */,
+				9F055C7623B54AF500AA9841 /* Products */,
+				A82C114418DF5040E56837BD /* Pods */,
+				2B6026C71A8AB11D484B9386 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F055C7623B54AF500AA9841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F055C7523B54AF500AA9841 /* SelectionButton.app */,
+				9F055C8923B54AF600AA9841 /* SelectionButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F055C7723B54AF500AA9841 /* SelectionButton */ = {
+			isa = PBXGroup;
+			children = (
+				9F055C7A23B54AF500AA9841 /* ViewController.swift */,
+				9F214BE423B5F9010044BEAD /* MainViewModel.swift */,
+				9F214BE623B5F9170044BEAD /* Images.swift */,
+				9F214BDB23B5F8A20044BEAD /* Core */,
+				9F055C7823B54AF500AA9841 /* AppDelegate.swift */,
+				9F055C7C23B54AF500AA9841 /* Main.storyboard */,
+				9F055C7F23B54AF600AA9841 /* Assets.xcassets */,
+				9F055C8123B54AF600AA9841 /* LaunchScreen.storyboard */,
+				9F055C8423B54AF600AA9841 /* Info.plist */,
+			);
+			path = SelectionButton;
+			sourceTree = "<group>";
+		};
+		9F055C8C23B54AF600AA9841 /* SelectionButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F055C8D23B54AF600AA9841 /* SelectionButtonTests.swift */,
+				9F055C8F23B54AF600AA9841 /* Info.plist */,
+			);
+			path = SelectionButtonTests;
+			sourceTree = "<group>";
+		};
+		9F214BDB23B5F8A20044BEAD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9F214BE023B5F8D80044BEAD /* SelectionView.swift */,
+				9F214BE223B5F8E90044BEAD /* SelectionViewModel.swift */,
+				9F214BDC23B5F8B00044BEAD /* ButtonView.swift */,
+				9F214BDE23B5F8C10044BEAD /* ButtonViewModel.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A82C114418DF5040E56837BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7085B2720575431F35FD3BE0 /* Pods-SelectionButton.debug.xcconfig */,
+				2B36E6B4BA743F290D006252 /* Pods-SelectionButton.release.xcconfig */,
+				C7371AB233290BB9F85E6E53 /* Pods-SelectionButtonTests.debug.xcconfig */,
+				7502FF422298CE3FE94475F3 /* Pods-SelectionButtonTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F055C7423B54AF500AA9841 /* SelectionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F055C9223B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionButton" */;
+			buildPhases = (
+				586D7DDABABBBAB596FF60CF /* [CP] Check Pods Manifest.lock */,
+				9F055C7123B54AF500AA9841 /* Sources */,
+				9F055C7223B54AF500AA9841 /* Frameworks */,
+				9F055C7323B54AF500AA9841 /* Resources */,
+				5687D61BA1B5F76CB4B3172C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SelectionButton;
+			productName = SelectionButton;
+			productReference = 9F055C7523B54AF500AA9841 /* SelectionButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F055C8823B54AF600AA9841 /* SelectionButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F055C9523B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionButtonTests" */;
+			buildPhases = (
+				DEAC49D75D21EE75363CBF0C /* [CP] Check Pods Manifest.lock */,
+				9F055C8523B54AF600AA9841 /* Sources */,
+				9F055C8623B54AF600AA9841 /* Frameworks */,
+				9F055C8723B54AF600AA9841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F055C8B23B54AF600AA9841 /* PBXTargetDependency */,
+			);
+			name = SelectionButtonTests;
+			productName = SelectionButtonTests;
+			productReference = 9F055C8923B54AF600AA9841 /* SelectionButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F055C6D23B54AF500AA9841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Cristhian;
+				TargetAttributes = {
+					9F055C7423B54AF500AA9841 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					9F055C8823B54AF600AA9841 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 9F055C7423B54AF500AA9841;
+					};
+				};
+			};
+			buildConfigurationList = 9F055C7023B54AF500AA9841 /* Build configuration list for PBXProject "SelectionButton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F055C6C23B54AF500AA9841;
+			productRefGroup = 9F055C7623B54AF500AA9841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F055C7423B54AF500AA9841 /* SelectionButton */,
+				9F055C8823B54AF600AA9841 /* SelectionButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F055C7323B54AF500AA9841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F055C8323B54AF600AA9841 /* LaunchScreen.storyboard in Resources */,
+				9F055C8023B54AF600AA9841 /* Assets.xcassets in Resources */,
+				9F055C7E23B54AF500AA9841 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F055C8723B54AF600AA9841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5687D61BA1B5F76CB4B3172C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SelectionButton/Pods-SelectionButton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SelectionButton/Pods-SelectionButton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SelectionButton/Pods-SelectionButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		586D7DDABABBBAB596FF60CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelectionButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEAC49D75D21EE75363CBF0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelectionButtonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F055C7123B54AF500AA9841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F214BE523B5F9010044BEAD /* MainViewModel.swift in Sources */,
+				9F214BDF23B5F8C10044BEAD /* ButtonViewModel.swift in Sources */,
+				9F055C7B23B54AF500AA9841 /* ViewController.swift in Sources */,
+				9F055C7923B54AF500AA9841 /* AppDelegate.swift in Sources */,
+				9F214BDD23B5F8B00044BEAD /* ButtonView.swift in Sources */,
+				9F214BE723B5F9170044BEAD /* Images.swift in Sources */,
+				9F214BE123B5F8D80044BEAD /* SelectionView.swift in Sources */,
+				9F214BE323B5F8E90044BEAD /* SelectionViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F055C8523B54AF600AA9841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F055C8E23B54AF600AA9841 /* SelectionButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F055C8B23B54AF600AA9841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F055C7423B54AF500AA9841 /* SelectionButton */;
+			targetProxy = 9F055C8A23B54AF600AA9841 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F055C7C23B54AF500AA9841 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F055C7D23B54AF500AA9841 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F055C8123B54AF600AA9841 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F055C8223B54AF600AA9841 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F055C9023B54AF600AA9841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F055C9123B54AF600AA9841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F055C9323B54AF600AA9841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7085B2720575431F35FD3BE0 /* Pods-SelectionButton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SelectionButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristhianleonli.SelectionButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F055C9423B54AF600AA9841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B36E6B4BA743F290D006252 /* Pods-SelectionButton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SelectionButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristhianleonli.SelectionButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F055C9623B54AF600AA9841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7371AB233290BB9F85E6E53 /* Pods-SelectionButtonTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SelectionButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristhianleonli.SelectionButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectionButton.app/SelectionButton";
+			};
+			name = Debug;
+		};
+		9F055C9723B54AF600AA9841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7502FF422298CE3FE94475F3 /* Pods-SelectionButtonTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SelectionButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristhianleonli.SelectionButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectionButton.app/SelectionButton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F055C7023B54AF500AA9841 /* Build configuration list for PBXProject "SelectionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F055C9023B54AF600AA9841 /* Debug */,
+				9F055C9123B54AF600AA9841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F055C9223B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F055C9323B54AF600AA9841 /* Debug */,
+				9F055C9423B54AF600AA9841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F055C9523B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F055C9623B54AF600AA9841 /* Debug */,
+				9F055C9723B54AF600AA9841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F055C6D23B54AF500AA9841 /* Project object */;
+}
