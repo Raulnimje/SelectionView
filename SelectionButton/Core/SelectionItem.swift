@@ -1,17 +1,20 @@
 import UIKit
 
-class ButtonView: UIView {
+typealias TapEventHandler = () -> Void
+
+class SelectionItem: UIView {
+    
+    // MARK: - Properties
+    
+    var onTouch: TapEventHandler?
     
     private let container = UIStackView(forAutoLayout: ())
     private let titleLabel = UILabel(forAutoLayout: ())
     private let iconImageView = UIImageView(forAutoLayout: ())
     private let topButton = UIButton(forAutoLayout: ())
-    private var animationDuration: TimeInterval = 0.01
+    private var animationDuration: TimeInterval = 0.0
     
-    typealias TapEventHandler = () -> Void
-    var onTouch: TapEventHandler?
-    
-    var viewModel: ButtonViewModel? {
+    var viewModel: SelectionItemModel? {
         didSet {
             if let model = viewModel {
                 fillData(model: model, duration: animationDuration)
@@ -19,6 +22,8 @@ class ButtonView: UIView {
             }
         }
     }
+    
+    // MARK: - Life Cycle
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,7 +40,9 @@ class ButtonView: UIView {
     }
 }
 
-private extension ButtonView {
+// MARK: - Private methods
+
+private extension SelectionItem {
     func setupView() {
         addSubview(container)
         
@@ -67,7 +74,7 @@ private extension ButtonView {
         onTouch?()
     }
     
-    func fillData(model: ButtonViewModel, duration: TimeInterval) {
+    func fillData(model: SelectionItemModel, duration: TimeInterval) {
         titleLabel.text = model.title
         
         if model.isSelected {

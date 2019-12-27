@@ -1,15 +1,29 @@
 import UIKit
 
+typealias ItemsChangedHandler = ([SelectionItemModel]) -> Void
+
 class SelectionView: UIView {
     
-    private var buttons: [ButtonView] = []
+    // MARK: - Properties
+    
+    private let viewModel = SelectionViewModel()
     private let stackContainer = UIStackView(forAutoLayout: ())
     
-    var viewModel: SelectionViewModel? {
+    var itemsWillChange: ItemsChangedHandler? {
         didSet {
-            if let model = viewModel {
-                fillData(model: model)
-            }
+            viewModel.itemsWillChange = itemsWillChange
+        }
+    }
+    
+    var itemsDidChange: ItemsChangedHandler? {
+        didSet {
+            viewModel.itemsDidChange = itemsDidChange
+        }
+    }
+    
+    var configuration: SelectionViewConfiguration? {
+        didSet {
+            fillData(configuration: configuration)
         }
     }
     
@@ -20,10 +34,6 @@ class SelectionView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
     }
 }
 
@@ -39,94 +49,22 @@ private extension SelectionView {
         stackContainer.distribution = .fillEqually
     }
     
-    func fillData(model: SelectionViewModel) {
+    func fillData(configuration: SelectionViewConfiguration?) {
+        // clean stackView, removing SelectionItem's
         stackContainer.arrangedSubviews.forEach { $0.removeFromSuperview() }
         
-        let options = model.options.map { option -> ButtonViewModel in
-            var newOption = option
-            
-            newOption.selectedColor = model.selectedColor
-            newOption.unselectedColor = model.unselectedColor
-            
-            return newOption
-        }
+        // settings the new configuration(model)
+        viewModel.configuration = configuration
         
-        buttons = createButtonViews(models: options)
-        buttons.forEach { (button) in
+        // removing the old items
+        viewModel.removeItems()
+        
+        // create buttons views
+        let items = viewModel.createItemsViews()
+        
+        // add them to the stack view
+        items.forEach { (button) in
             stackContainer.addArrangedSubview(button)
-        }
-    }
-    
-    func createButtonViews(models: [ButtonViewModel]) -> [ButtonView] {
-        return models.map { model in
-            let button = ButtonView(forAutoLayout: ())
-            button.viewModel = model
-            
-            button.onTouch = { [weak self] in
-                self?.itemSelected(model)
-            }
-            
-            return button
-        }
-    }
-}
-
-private extension SelectionView {
-    func itemSelected(_ model: ButtonViewModel) {
-        // if multiselection is disabled
-        // then just mark as selected the model
-        // and disbale the rest
-        let multiple = viewModel?.multipleSelection ?? false
-        
-        guard multiple else {
-            return markAsSelected(model)
-        }
-        
-        // if multiselection is enabled
-        var selected: ButtonView?
-        var othersCount = 0
-        
-        for button in buttons {
-            guard let buttonViewModel = button.viewModel else {
-                continue
-            }
-            
-            if buttonViewModel == model {
-                selected = button
-            } else {
-                if buttonViewModel.isSelected {
-                    othersCount += 1
-                }
-            }
-        }
-        
-        guard var buttonViewModel = selected?.viewModel else {
-            return
-        }
-        
-        // if user wants to unselect it
-        if buttonViewModel.isSelected {
-            // check if it's the only one selected, if so, don't unselect it
-            if othersCount > 0 {
-                buttonViewModel.isSelected = false
-            }
-        } else {
-            // if user wants to select it, then just do it
-            buttonViewModel.isSelected = true
-        }
-        
-        // set the viewModel to trigger the redraw action
-        selected?.viewModel = buttonViewModel
-    }
-    
-    func markAsSelected(_ model: ButtonViewModel) {
-        buttons.forEach { (button) in
-            guard var buttonViewModel = button.viewModel else {
-                return
-            }
-            
-            buttonViewModel.isSelected = buttonViewModel == model
-            button.viewModel = buttonViewModel
         }
     }
 }

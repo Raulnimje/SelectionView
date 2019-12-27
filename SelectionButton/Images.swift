@@ -10,6 +10,8 @@ struct Images {
 }
 
 extension UIImage {
+    // ease to tint images given a color
+    // also find here https://gist.github.com/cristhianleonli/5aba25ee06be0844d42dbbb452ccd67b
     func tintedImage(imageColor: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         let context = UIGraphicsGetCurrentContext()

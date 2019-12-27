@@ -13,12 +13,13 @@
 		9F055C8023B54AF600AA9841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F055C7F23B54AF600AA9841 /* Assets.xcassets */; };
 		9F055C8323B54AF600AA9841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F055C8123B54AF600AA9841 /* LaunchScreen.storyboard */; };
 		9F055C8E23B54AF600AA9841 /* SelectionButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F055C8D23B54AF600AA9841 /* SelectionButtonTests.swift */; };
-		9F214BDD23B5F8B00044BEAD /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BDC23B5F8B00044BEAD /* ButtonView.swift */; };
-		9F214BDF23B5F8C10044BEAD /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BDE23B5F8C10044BEAD /* ButtonViewModel.swift */; };
+		9F214BDD23B5F8B00044BEAD /* SelectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BDC23B5F8B00044BEAD /* SelectionItem.swift */; };
+		9F214BDF23B5F8C10044BEAD /* SelectionItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BDE23B5F8C10044BEAD /* SelectionItemModel.swift */; };
 		9F214BE123B5F8D80044BEAD /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE023B5F8D80044BEAD /* SelectionView.swift */; };
 		9F214BE323B5F8E90044BEAD /* SelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE223B5F8E90044BEAD /* SelectionViewModel.swift */; };
 		9F214BE523B5F9010044BEAD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE423B5F9010044BEAD /* MainViewModel.swift */; };
 		9F214BE723B5F9170044BEAD /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE623B5F9170044BEAD /* Images.swift */; };
+		9F214BE923B67A730044BEAD /* SelectionViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */; };
 		CFD2819BCE9264FBC2698864 /* Pods_SelectionButtonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2AE61E55B3AC049BD6DC7F /* Pods_SelectionButtonTests.framework */; };
 		E2A4307556E1B479B50B9435 /* Pods_SelectionButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C69238E51EE2CD9FE141FF3 /* Pods_SelectionButton.framework */; };
 /* End PBXBuildFile section */
@@ -48,12 +49,13 @@
 		9F055C8923B54AF600AA9841 /* SelectionButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectionButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F055C8D23B54AF600AA9841 /* SelectionButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionButtonTests.swift; sourceTree = "<group>"; };
 		9F055C8F23B54AF600AA9841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F214BDC23B5F8B00044BEAD /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		9F214BDE23B5F8C10044BEAD /* ButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewModel.swift; sourceTree = "<group>"; };
+		9F214BDC23B5F8B00044BEAD /* SelectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionItem.swift; sourceTree = "<group>"; };
+		9F214BDE23B5F8C10044BEAD /* SelectionItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionItemModel.swift; sourceTree = "<group>"; };
 		9F214BE023B5F8D80044BEAD /* SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
 		9F214BE223B5F8E90044BEAD /* SelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewModel.swift; sourceTree = "<group>"; };
 		9F214BE423B5F9010044BEAD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9F214BE623B5F9170044BEAD /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewConfiguration.swift; sourceTree = "<group>"; };
 		C7371AB233290BB9F85E6E53 /* Pods-SelectionButtonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButtonTests.debug.xcconfig"; path = "Target Support Files/Pods-SelectionButtonTests/Pods-SelectionButtonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB2AE61E55B3AC049BD6DC7F /* Pods_SelectionButtonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelectionButtonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,9 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				9F214BE023B5F8D80044BEAD /* SelectionView.swift */,
+				9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */,
 				9F214BE223B5F8E90044BEAD /* SelectionViewModel.swift */,
-				9F214BDC23B5F8B00044BEAD /* ButtonView.swift */,
-				9F214BDE23B5F8C10044BEAD /* ButtonViewModel.swift */,
+				9F214BDC23B5F8B00044BEAD /* SelectionItem.swift */,
+				9F214BDE23B5F8C10044BEAD /* SelectionItemModel.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -323,10 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F214BE523B5F9010044BEAD /* MainViewModel.swift in Sources */,
-				9F214BDF23B5F8C10044BEAD /* ButtonViewModel.swift in Sources */,
+				9F214BDF23B5F8C10044BEAD /* SelectionItemModel.swift in Sources */,
 				9F055C7B23B54AF500AA9841 /* ViewController.swift in Sources */,
+				9F214BE923B67A730044BEAD /* SelectionViewConfiguration.swift in Sources */,
 				9F055C7923B54AF500AA9841 /* AppDelegate.swift in Sources */,
-				9F214BDD23B5F8B00044BEAD /* ButtonView.swift in Sources */,
+				9F214BDD23B5F8B00044BEAD /* SelectionItem.swift in Sources */,
 				9F214BE723B5F9170044BEAD /* Images.swift in Sources */,
 				9F214BE123B5F8D80044BEAD /* SelectionView.swift in Sources */,
 				9F214BE323B5F8E90044BEAD /* SelectionViewModel.swift in Sources */,

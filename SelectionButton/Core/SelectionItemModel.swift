@@ -1,6 +1,6 @@
 import UIKit
 
-struct ButtonViewModel {
+struct SelectionItemModel: CustomStringConvertible {
     
     // MARK: - Private methods
     
@@ -24,10 +24,16 @@ struct ButtonViewModel {
         self.image = image
         self.isSelected = isSelected
     }
+    
+    var description: String {
+        return "ButtonModel (title: \(title), (isSelected: \(isSelected))"
+    }
 }
 
-extension ButtonViewModel: Equatable {
-    static func == (lhs: ButtonViewModel, rhs: ButtonViewModel) -> Bool {
+// MARK: - Equatable Behaviour
+
+extension SelectionItemModel: Equatable {
+    static func == (lhs: SelectionItemModel, rhs: SelectionItemModel) -> Bool {
         return lhs.title.lowercased() == rhs.title.lowercased()
     }
 }
