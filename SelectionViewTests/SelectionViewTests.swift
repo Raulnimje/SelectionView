@@ -1,15 +1,7 @@
-//
-//  SelectionButtonTests.swift
-//  SelectionButtonTests
-//
-//  Created by Cristhian Leon on 26.12.19.
-//  Copyright © 2019 Cristhian. All rights reserved.
-//
-
 import XCTest
-@testable import SelectionButton
+@testable import SelectionView
 
-class SelectionButtonTests: XCTestCase {
+class SelectionViewTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -30,5 +22,4 @@ class SelectionButtonTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }
