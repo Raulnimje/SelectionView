@@ -55,8 +55,8 @@ private extension SelectionItem {
         
         // Icon image view
         container.addArrangedSubview(iconImageView)
-        iconImageView.autoMatch(.height, to: .height, of: container, withMultiplier: 0.7)
-        iconImageView.autoMatch(.width, to: .height, of: container, withMultiplier: 0.7)
+        iconImageView.autoMatch(.height, to: .height, of: container, withMultiplier: 0.65)
+        iconImageView.autoMatch(.width, to: .height, of: container, withMultiplier: 0.65)
         
         iconImageView.contentMode = .scaleAspectFit
         

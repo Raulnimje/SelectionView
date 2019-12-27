@@ -39,14 +39,14 @@
 		2B36E6B4BA743F290D006252 /* Pods-SelectionButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButton.release.xcconfig"; path = "Target Support Files/Pods-SelectionButton/Pods-SelectionButton.release.xcconfig"; sourceTree = "<group>"; };
 		7085B2720575431F35FD3BE0 /* Pods-SelectionButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButton.debug.xcconfig"; path = "Target Support Files/Pods-SelectionButton/Pods-SelectionButton.debug.xcconfig"; sourceTree = "<group>"; };
 		7502FF422298CE3FE94475F3 /* Pods-SelectionButtonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectionButtonTests.release.xcconfig"; path = "Target Support Files/Pods-SelectionButtonTests/Pods-SelectionButtonTests.release.xcconfig"; sourceTree = "<group>"; };
-		9F055C7523B54AF500AA9841 /* SelectionButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectionButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F055C7523B54AF500AA9841 /* SelectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F055C7823B54AF500AA9841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F055C7A23B54AF500AA9841 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F055C7D23B54AF500AA9841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F055C7F23B54AF600AA9841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F055C8223B54AF600AA9841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F055C8423B54AF600AA9841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F055C8923B54AF600AA9841 /* SelectionButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectionButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F055C8923B54AF600AA9841 /* SelectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F055C8D23B54AF600AA9841 /* SelectionButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionButtonTests.swift; sourceTree = "<group>"; };
 		9F055C8F23B54AF600AA9841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F214BDC23B5F8B00044BEAD /* SelectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionItem.swift; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 		9F055C7623B54AF500AA9841 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F055C7523B54AF500AA9841 /* SelectionButton.app */,
-				9F055C8923B54AF600AA9841 /* SelectionButtonTests.xctest */,
+				9F055C7523B54AF500AA9841 /* SelectionView.app */,
+				9F055C8923B54AF600AA9841 /* SelectionViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,11 +137,11 @@
 		9F214BDB23B5F8A20044BEAD /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */,
 				9F214BE023B5F8D80044BEAD /* SelectionView.swift */,
 				9F214BE223B5F8E90044BEAD /* SelectionViewModel.swift */,
 				9F214BDC23B5F8B00044BEAD /* SelectionItem.swift */,
 				9F214BDE23B5F8C10044BEAD /* SelectionItemModel.swift */,
+				9F214BE823B67A730044BEAD /* SelectionViewConfiguration.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9F055C7423B54AF500AA9841 /* SelectionButton */ = {
+		9F055C7423B54AF500AA9841 /* SelectionView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F055C9223B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionButton" */;
+			buildConfigurationList = 9F055C9223B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionView" */;
 			buildPhases = (
 				586D7DDABABBBAB596FF60CF /* [CP] Check Pods Manifest.lock */,
 				9F055C7123B54AF500AA9841 /* Sources */,
@@ -174,14 +174,14 @@
 			);
 			dependencies = (
 			);
-			name = SelectionButton;
+			name = SelectionView;
 			productName = SelectionButton;
-			productReference = 9F055C7523B54AF500AA9841 /* SelectionButton.app */;
+			productReference = 9F055C7523B54AF500AA9841 /* SelectionView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9F055C8823B54AF600AA9841 /* SelectionButtonTests */ = {
+		9F055C8823B54AF600AA9841 /* SelectionViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F055C9523B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionButtonTests" */;
+			buildConfigurationList = 9F055C9523B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionViewTests" */;
 			buildPhases = (
 				DEAC49D75D21EE75363CBF0C /* [CP] Check Pods Manifest.lock */,
 				9F055C8523B54AF600AA9841 /* Sources */,
@@ -193,9 +193,9 @@
 			dependencies = (
 				9F055C8B23B54AF600AA9841 /* PBXTargetDependency */,
 			);
-			name = SelectionButtonTests;
+			name = SelectionViewTests;
 			productName = SelectionButtonTests;
-			productReference = 9F055C8923B54AF600AA9841 /* SelectionButtonTests.xctest */;
+			productReference = 9F055C8923B54AF600AA9841 /* SelectionViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -217,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9F055C7023B54AF500AA9841 /* Build configuration list for PBXProject "SelectionButton" */;
+			buildConfigurationList = 9F055C7023B54AF500AA9841 /* Build configuration list for PBXProject "SelectionView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -230,8 +230,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F055C7423B54AF500AA9841 /* SelectionButton */,
-				9F055C8823B54AF600AA9841 /* SelectionButtonTests */,
+				9F055C7423B54AF500AA9841 /* SelectionView */,
+				9F055C8823B54AF600AA9841 /* SelectionViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -350,7 +350,7 @@
 /* Begin PBXTargetDependency section */
 		9F055C8B23B54AF600AA9841 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9F055C7423B54AF500AA9841 /* SelectionButton */;
+			target = 9F055C7423B54AF500AA9841 /* SelectionView */;
 			targetProxy = 9F055C8A23B54AF600AA9841 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -502,7 +502,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cristhianleonli.SelectionButton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristhianleonli.SelectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -520,7 +520,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cristhianleonli.SelectionButton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristhianleonli.SelectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,7 +544,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectionButton.app/SelectionButton";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectionView.app/SelectionView";
 			};
 			name = Debug;
 		};
@@ -565,14 +565,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectionButton.app/SelectionButton";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectionView.app/SelectionView";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F055C7023B54AF500AA9841 /* Build configuration list for PBXProject "SelectionButton" */ = {
+		9F055C7023B54AF500AA9841 /* Build configuration list for PBXProject "SelectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F055C9023B54AF600AA9841 /* Debug */,
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F055C9223B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionButton" */ = {
+		9F055C9223B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F055C9323B54AF600AA9841 /* Debug */,
@@ -590,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F055C9523B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionButtonTests" */ = {
+		9F055C9523B54AF600AA9841 /* Build configuration list for PBXNativeTarget "SelectionViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F055C9623B54AF600AA9841 /* Debug */,

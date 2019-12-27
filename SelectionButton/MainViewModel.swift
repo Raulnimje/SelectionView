@@ -3,26 +3,20 @@ import Foundation
 
 class MainViewModel {
     
-    private var buttonModels: [SelectionItemModel] {
-        var models = [
-            SelectionItemModel(title: "Reports", image: Images.board),
-            SelectionItemModel(title: "Files", image: Images.file),
-            SelectionItemModel(title: "Gestures", image: Images.hand),
-            SelectionItemModel(title: "Sports", image: Images.shoe),
-            SelectionItemModel(title: "Weather", image: Images.temp)
+    private var options: [SelectionItemModel] {
+        return [
+            SelectionItemModel(title: "Reports", image: Images.icon1, isSelected: true),
+            SelectionItemModel(title: "Files", image: Images.icon2),
+            SelectionItemModel(title: "Gestures", image: Images.icon3),
+            SelectionItemModel(title: "Sports", image: Images.icon4),
+            SelectionItemModel(title: "Weather", image: Images.icon5)
         ]
-        
-        // mark random element as selected
-        let random = Int.random(in: 0..<models.count)
-        models[random].isSelected = true
-       
-        return models
     }
     
     // configuration for SelectionView
     func selectionConfig(multiple: Bool) -> SelectionViewConfiguration {
         return SelectionViewConfiguration(
-            options: buttonModels,
+            options: options,
             selectedColor: selectionColor,
             unselectedColor: .white,
             multipleSelection: multiple

@@ -2,11 +2,11 @@ import UIKit
 import Foundation
 
 struct Images {
-    static let board: UIImage = UIImage(named: "board_icon.png")!
-    static let file: UIImage = UIImage(named: "file_icon.png")!
-    static let hand: UIImage = UIImage(named: "hand_icon.png")!
-    static let shoe: UIImage = UIImage(named: "shoe_icon.png")!
-    static let temp: UIImage = UIImage(named: "temp_icon.png")!
+    static let icon1: UIImage = UIImage(named: "icon_1")!
+    static let icon2: UIImage = UIImage(named: "icon_2")!
+    static let icon3: UIImage = UIImage(named: "icon_3")!
+    static let icon4: UIImage = UIImage(named: "icon_4")!
+    static let icon5: UIImage = UIImage(named: "icon_5")!
 }
 
 extension UIImage {
