@@ -21,8 +21,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet private var selectionViewSingle: SelectionView!
-    @IBOutlet private var selectionViewMultiple: SelectionView!
+    @IBOutlet private var selectionView: SelectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
