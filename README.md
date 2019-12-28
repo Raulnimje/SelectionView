@@ -1,10 +1,8 @@
 # SelectionView
 
-## Screenshots
-
 | Single | Multiple | Both |
 | ------ | ------ | ------ |
-| ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_1.png) | ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_2.png) | <img src="https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/quick_video.gif" width="800"> |
+| ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_1.png) | ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_2.png) | <img src="https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/quick_video.gif" width="900"> |
 
 ## What's in the box
 - Core/SelectionView.swift
@@ -49,7 +47,7 @@ private extension ViewController {
         )
         
         // event when items in the list changed
-        selectionViewSingle.itemsDidChange = { models in
+        selectionView.itemsDidChange = { models in
             models.forEach { print($0) }
         }
     }
