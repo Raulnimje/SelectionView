@@ -5,12 +5,12 @@
 | ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_1.png) | ![launch](https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/screen_2.png) | <img src="https://github.com/cristhianleonli/SelectionView/blob/master/screenshots/quick_video.gif" width="900"> |
 
 ## What's in the box
-- Core/SelectionView.swift
-- Core/SelectionViewModel.swift
-- Core/SelectionItem.swift
-- Core/SelectionItemModel.swift
-- Core/SelectionViewConfiguration.swift
-- Core/Layout+Util.swift
+- `Core/SelectionView.swift`
+- `Core/SelectionViewModel.swift`
+- `Core/SelectionItem.swift`
+- `Core/SelectionItemModel.swift`
+- `Core/SelectionViewConfiguration.swift`
+- `Core/Layout+Util.swift`
 
 ## Usage
 
